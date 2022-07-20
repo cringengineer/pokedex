@@ -172,10 +172,12 @@
   background-size: 100% 100%;
   width: 50em;
   height: 30em;
-  left: 23%;
-  top: 20%;
   border-radius: 5%;
   display: flex;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .popup__wraper {
