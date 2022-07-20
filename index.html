@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+    <link type="Image/x-icon" href="src/img/favicon.ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,400;0,700;1,200;1,300&family=Mitr:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__container">
+          <h1 class="header__title">Pokédex</h1>
+          <ul class="nav__items">
+            <li class="nav__item"><a class="nav__item" href="#">Login</a></li>
+            <li class="nav__item">
+              <a class="nav__item" href="#">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="search">
+          <input type="text" class="input__search" />
+          <button class="find__button">
+            <img class="find" src="src/img/find.svg" alt="find"/>
+          </button>
+
+
+            <ul class="list__names">
+            </ul>
+          
+        </div>
+        <div class="main__container"></div>
+      </div>
+    </main>
+
+    <div class="popup closed">
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          ©2022
+          <a class="cringengineer" href="https://github.com/cringengineer"
+            >cringengineer</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/modules/init.js"></script>
+    <script src="src/modules/popup.js"></script>
+    <script src="src/modules/search.js"></script>
+  </body>
+</html>
