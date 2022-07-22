@@ -164,6 +164,38 @@
   background-color: #e2a6e9;
 }
 
+.Fighting {
+  background-color: #ce5f5f;
+}
+
+.Rock {
+  background-color: #b5a64e;
+}
+
+.Psychic {
+  background-color: #f074ea;
+}
+
+.Ice {
+  background-color: #5ea2a5;
+}
+
+.Ghost {
+  background-color: #7c617b;
+}
+
+.Steel {
+  background-color: #7b96ae;
+}
+
+.Dragon {
+  background-color: #4c83b3;
+}
+
+.Dark {
+  background-color: #575a43;
+}
+
 .open {
   z-index: 5;
   position: fixed;
@@ -345,7 +377,6 @@
 .find__button {
   background-color: #cdd6e1;
   border: none;
-  cursor: pointer;
 }
 
 .find {
@@ -380,6 +411,126 @@
 
 .hiden {
   display: none;
+}
+
+.top__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.filter__button {
+  font-size: 1.3em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ccc9c9;
+  margin: 0 2em;
+  font-family: "Mitr";
+  padding: 0.2em 2em;
+  transition: 0.5s;
+  font-weight: 300;
+}
+
+.filter__button:hover {
+  background-color: #b8b1b0;
+  transform: scale(115%);
+}
+
+.filter__popup {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  background-color: #adadb8;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50em;
+  height: 30em;
+  border-radius: 5%;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.type__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.type__item {
+  margin: 0.6em 1em;
+  border: none;
+  border-radius: 1em;
+  font-size: 1.1em;
+  padding: 0.2em 1.5em;
+  font-family: "Mitr";
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.type__item:hover {
+  transform: scale(115%);
+}
+
+.close__filter {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 755px;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 1.5em;
+  opacity: 0.5;
+  padding-top: 12px;
+}
+
+.close__filter:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.control__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply {
+  width: 10em;
+  border-radius: 1em;
+  height: 2em;
+  background-color: #3a8b3a;
+  border: none;
+  font-family: "Mitr";
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 1em;
+}
+
+.reset {
+  width: 10em;
+  border-radius: 1em;
+  height: 2em;
+  background-color: #9d3030;
+  border: none;
+  font-family: "Mitr";
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.right {
+  margin-left: 8em;
+  margin-top: 22.5em;
+}
+
+.apply:hover {
+  transform: scale(105%);
+}
+
+.reset:hover {
+  transform: scale(105%);
 }
 
 /*# sourceMappingURL=style.css.map */

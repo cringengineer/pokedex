@@ -31,23 +31,59 @@
     </header>
     <main class="main">
       <div class="container">
+      <div class="top__container">
         <div class="search">
           <input type="text" class="input__search" />
           <button class="find__button">
             <img class="find" src="src/img/find.svg" alt="find"/>
           </button>
-
-
             <ul class="list__names">
             </ul>
-          
         </div>
-        <div class="main__container"></div>
+        <div class="filter">
+          <button class="filter__button">Filter</button>
+        </div>
+      </div>
+
+      <div class="main__container"></div>
       </div>
     </main>
 
     <div class="popup closed">
+    </div>
 
+    <div class="hiden" id="filter">
+        <ul class="type__list">
+           <input class="type__item Normal" type="button" value="Normal">
+           <input class="type__item Fire" type="button" value="Fire">
+           <input class="type__item Water" type="button" value="Water">
+           <input class="type__item Grass" type="button" value="Grass">
+           <input class="type__item Flying" type="button" value="Flying">
+           <input class="type__item Fighting" type="button" value="Fighting">
+           <input class="type__item Poison" type="button" value="Poison">
+           <input class="type__item Electric" type="button" value="Electric">
+           <input class="type__item Ground" type="button" value="Ground">
+           <input class="type__item Rock" type="button" value="Rock">
+           <input class="type__item Psychic" type="button" value="Psychic">
+           <input class="type__item Ice" type="button" value="Ice">
+           <input class="type__item Bug" type="button" value="Bug">
+           <input class="type__item Ghost" type="button" value="Ghost">
+           <input class="type__item Steel" type="button" value="Steel">
+           <input class="type__item Dragon" type="button" value="Dragon">
+           <input class="type__item Dark" type="button" value="Dark">
+           <input class="type__item Fairy" type="button" value="Fairy">
+        </ul>
+        <div class="right">
+          <ul class="choosed">
+
+          </ul>
+          <div class="control__buttons">
+            <button class="apply">Apply</button>
+            <button class="reset">Reset</button>
+          </div>
+
+        </div>
+        <div class="close__filter"><span class="line__one"></span><span class="line__two"></span></div>
     </div>
 
     <footer class="footer">
@@ -64,5 +100,6 @@
     <script src="src/modules/init.js"></script>
     <script src="src/modules/popup.js"></script>
     <script src="src/modules/search.js"></script>
+    <script src="src/modules/filter.js"></script>
   </body>
 </html>
