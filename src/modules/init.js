@@ -4,7 +4,7 @@ async function renderPokemons() {
     let pokemons = pokemonList;
     let html = "";
     pokemons.forEach((pokemon) => {
-    let htmlSegment = `<div class="pokemon__card click">
+    let htmlSegment = `<div class="pokemon__card ${pokemon.type.toLowerCase()} ${pokemon.secondType.toLowerCase()}">
                             <div class="img__background">
                             <img class="pokemon__img" src=${pokemon.img}>
                             </div>

@@ -50,7 +50,7 @@
 .pokemon__card {
   width: 15em;
   height: 22em;
-  background-color: #ccc6c5;
+  background-color: rgba(175, 178, 187, 0.5490196078);
   margin-left: 3em;
   margin-bottom: 3em;
   border-radius: 1em;
@@ -59,7 +59,7 @@
 }
 
 .pokemon__card:hover {
-  box-shadow: 5px 5px 4px #d5caca;
+  box-shadow: 5px 5px 4px rgba(175, 178, 187, 0.5490196078);
   transform: scale(105%);
 }
 
@@ -99,7 +99,7 @@
 }
 
 .img__background {
-  background-color: rgba(236, 223, 221, 0.5098039216);
+  background-color: #b6bac6;
   border-radius: 1em;
 }
 
@@ -261,7 +261,7 @@
   font-family: "Mitr";
   font-weight: 400;
   text-align: center;
-  background-color: rgba(162, 156, 156, 0.8509803922);
+  background-color: rgba(182, 186, 198, 0.5803921569);
   border-radius: 30px;
   width: 330px;
 }
@@ -272,7 +272,7 @@
   width: 40px;
   height: 40px;
   border-radius: 43px;
-  background-color: rgba(162, 156, 156, 0.8509803922);
+  background-color: rgba(182, 186, 198, 0.5803921569);
   padding-top: 1em;
   margin-top: 1.2em;
   margin-left: 1.5em;
@@ -311,7 +311,7 @@
   margin-top: 2em;
   font-family: "Gantari";
   max-width: 350px;
-  background-color: rgba(162, 156, 156, 0.8509803922);
+  background-color: rgba(182, 186, 198, 0.5803921569);
   border-radius: 30px;
   width: 330px;
   text-align: center;
@@ -461,7 +461,7 @@
 }
 
 .type__item {
-  margin: 0.6em 1em;
+  margin: 0.5em 1em;
   border: none;
   border-radius: 1em;
   font-size: 1.1em;
@@ -495,6 +495,8 @@
 .control__buttons {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5em;
+  margin-left: 8em;
 }
 
 .apply {
@@ -521,16 +523,23 @@
 }
 
 .right {
-  margin-left: 8em;
-  margin-top: 22.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .apply:hover {
   transform: scale(105%);
+  background-color: #327932;
 }
 
 .reset:hover {
   transform: scale(105%);
+  background-color: #892a2a;
+}
+
+.choosed__type {
+  border: #4b4b4b 3px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
