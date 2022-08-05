@@ -45,6 +45,7 @@
 
 .main {
   background-color: #cdd6e1;
+  min-height: 100vh;
 }
 
 .pokemon__card {
@@ -467,6 +468,26 @@
 .choosed__type {
   border: #4b4b4b 3px solid;
   padding: 0.1em 0;
+}
+
+@media (max-width: 630px) {
+  .top__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input__search {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .pokemon__card {
+    margin: 1em auto;
+  }
+  .list__names {
+    margin-left: 0;
+  }
+  .type__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

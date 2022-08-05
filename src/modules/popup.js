@@ -55,14 +55,15 @@ let closePopup = function () {
 
 cards.forEach((elem) => {
   elem.addEventListener("click", function (e) {
+    let popupId = this.classList[0];
     popup.classList.add("open");
     popup.classList.remove("closed");
     body.style.overflow = "hidden";
-    let name = e.path[2].childNodes[5].outerText;
-    let description = e.path[2].childNodes[9].outerText;
-    let id = e.path[2].childNodes[3].outerText;
-    let firstType = e.path[2].childNodes[7].childNodes[1].outerText;
-    let secondType = e.path[2].childNodes[7].childNodes[3].outerText;
+    let name = pokemonList[popupId].name;
+    let description = pokemonList[popupId].description;
+    let id = pokemonList[popupId].id;
+    let firstType = pokemonList[popupId].type;
+    let secondType = pokemonList[popupId].secondType;
     let src = id.substr(1);
     let html = "";
     let segment = ` 

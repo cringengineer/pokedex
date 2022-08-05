@@ -1,482 +1,493 @@
 @mixin font-options($font-size) {
-    font-size: $font-size;
-    color: whitesmoke;
-    text-decoration: none;
-    list-style-type: none;
+  font-size: $font-size;
+  color: whitesmoke;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 @mixin pokeName() {
-    font-size: 1.6em;
-    color: black;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    font-weight: 300;
-    font-family: 'Mitr';
+  font-size: 1.6em;
+  color: black;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-weight: 300;
+  font-family: "Mitr";
 }
 
 @mixin close($degrees) {
-    width: 30px;
-    position: absolute;
-    height: 1.5px;
-    background-color: white;
-    transform: rotate($degrees);
-    border-radius: 1px;
+  width: 30px;
+  position: absolute;
+  height: 1.5px;
+  background-color: white;
+  transform: rotate($degrees);
+  border-radius: 1px;
 }
 @mixin button($color) {
-    width: 10em;
-    border-radius: 1em;
-    height: 2em;
-    background-color: $color;
-    border: none;
-    font-family: 'Mitr';
-    cursor: pointer;
-    transition: .5s;
+  width: 10em;
+  border-radius: 1em;
+  height: 2em;
+  background-color: $color;
+  border: none;
+  font-family: "Mitr";
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
-    background-image: url(../img/noise_transparent.png);
-    background-color: #b14128;
-    padding: 1%;
+  background-image: url(../img/noise_transparent.png);
+  background-color: #b14128;
+  padding: 1%;
 }
 
 .header__title {
-    @include font-options(3em);
-    font-family: 'Mitr';
-    cursor: pointer;
+  @include font-options(3em);
+  font-family: "Mitr";
+  cursor: pointer;
 }
 
 .nav__item {
-    @include font-options(1.5em);
+  @include font-options(1.5em);
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav__items {
-    display: flex;
+  display: flex;
 }
 
 .nav__item {
-    margin-right: 10%;
-    font-family: 'Mitr';
+  margin-right: 10%;
+  font-family: "Mitr";
 }
 
 .main {
-    background-color: #cdd6e1;
-
+  background-color: #cdd6e1;
+  min-height: 100vh;
 }
 
 .pokemon__card {
-    width: 15em;
-    height: 22em;
-    background-color: #afb2bb8c;
-    margin-left: 3em;
-    margin-bottom: 3em;
-    border-radius: 1em;
-    transition: .5s;
-    cursor: pointer;
+  width: 15em;
+  height: 22em;
+  background-color: #afb2bb8c;
+  margin-left: 3em;
+  margin-bottom: 3em;
+  border-radius: 1em;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .pokemon__card:hover {
-    box-shadow: 5px 5px 4px #afb2bb8c;
-    transform: scale(105%);
+  box-shadow: 5px 5px 4px #afb2bb8c;
+  transform: scale(105%);
 }
 
 .pokemon__img {
-    width: 15em;
-    height: 15em;
+  width: 15em;
+  height: 15em;
 }
 
 .pokemon__id {
-    font-size: .9em;
-    opacity: .8;
-    color: black;
-    margin-left: 3%;
-    margin-top: 1%;
-    font-family: 'Mitr';
+  font-size: 0.9em;
+  opacity: 0.8;
+  color: black;
+  margin-left: 3%;
+  margin-top: 1%;
+  font-family: "Mitr";
 }
 
 .types {
-    display: flex;
-    margin-left: 5%;
+  display: flex;
+  margin-left: 5%;
 }
 
 .pokemon__name {
-    @include pokeName();
-    margin-left: 5%;
+  @include pokeName();
+  margin-left: 5%;
 }
 
 .main__container {
-    padding-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .img__background {
-    background-color: #b6bac6;
-    border-radius: 1em;
+  background-color: #b6bac6;
+  border-radius: 1em;
 }
 
 .pokemon__type {
-    font-size: 1.3em;
-    text-align: center;
-    width: 3.5em;
-    margin-right: 5%;
-    border-radius: 1em;
-    font-family: 'Gantari';
+  font-size: 1.3em;
+  text-align: center;
+  width: 3.5em;
+  margin-right: 5%;
+  border-radius: 1em;
+  font-family: "Gantari";
 }
 
 .second__type {
-    font-size: 1.3em;
-    text-align: center;
-    width: 3.5em;
-    border-radius: 1em;
-    font-family: 'Gantari';
+  font-size: 1.3em;
+  text-align: center;
+  width: 3.5em;
+  border-radius: 1em;
+  font-family: "Gantari";
 }
 
 .description {
-    display: none;
+  display: none;
 }
 
 .Grass {
-    background-color: #77a477;
+  background-color: #77a477;
 }
 
 .Poison {
-    background-color: #a377a4;
+  background-color: #a377a4;
 }
 
 .Fire {
-    background-color: #dd7d53;
+  background-color: #dd7d53;
 }
 
 .Water {
-    background-color: #708ed6;
+  background-color: #708ed6;
 }
 
 .Bug {
-    background-color: #658e65;
+  background-color: #658e65;
 }
 
 .Flying {
-    background-color: #778aa4;
+  background-color: #778aa4;
 }
 
 .Normal {
-    background-color: #8a919b;
+  background-color: #8a919b;
 }
 
 .Electric {
-    background-color: #ffff589c;
+  background-color: #ffff589c;
 }
 
 .Ground {
-    background-color: #c0c05c;
+  background-color: #c0c05c;
 }
 
 .Fairy {
-    background-color: #e2a6e9;
+  background-color: #e2a6e9;
 }
-.Fighting{
-background-color: #ce5f5f;
+.Fighting {
+  background-color: #ce5f5f;
 }
 .Rock {
-background-color: #b5a64e;
+  background-color: #b5a64e;
 }
 .Psychic {
-background-color: #f074ea;
+  background-color: #f074ea;
 }
 .Ice {
-background-color: #5ea2a5;
+  background-color: #5ea2a5;
 }
 .Ghost {
-background-color: #7c617b;
+  background-color: #7c617b;
 }
 .Steel {
-background-color: #7b96ae;
+  background-color: #7b96ae;
 }
 .Dragon {
-background-color: #4c83b3;
+  background-color: #4c83b3;
 }
 .Dark {
-background-color: #575a43;
+  background-color: #575a43;
 }
-
-
-
-
-
-
 
 ////////popup//////////
 .open {
-    z-index: 5;
-    position: fixed;
-    background-color: #a2a2a2;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 50em;
-    height: 30em;
-    border-radius: 5%;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) 
+  z-index: 5;
+  position: fixed;
+  background-color: #a2a2a2;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50em;
+  height: 30em;
+  border-radius: 5%;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .popup__wraper {
-    display: flex;
-    margin-top: 3em;
+  display: flex;
+  margin-top: 3em;
 }
 
 .closed {
-    display: none;
+  display: none;
 }
 
 .layer {
-    width: 100%;
-    height: 100%;
-    background: blue;
-    position: absolute;
-    z-index: 4;
-    opacity: .7;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  z-index: 4;
+  opacity: 0.7;
 }
 
 .close {
-    position: relative;
-    top: -40px;
-    left: 410px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    padding-top: 14px;
-    opacity: .7;
-    transition: .3s;
+  position: relative;
+  top: -40px;
+  left: 410px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding-top: 14px;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .close:hover {
-    opacity: 1;
-    transform: scale(1.1);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .popup__img {
-    height: 350px;
-    transition: 1s;
+  height: 350px;
+  transition: 1s;
 }
 
 .popup__img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .popup__name {
-    font-size: 3em;
-    font-family: 'Mitr';
-    font-weight: 400;
-    text-align: center;
-    background-color: #b6bac694;
-    border-radius: 30px;
-    width: 330px;
+  font-size: 3em;
+  font-family: "Mitr";
+  font-weight: 400;
+  text-align: center;
+  background-color: #b6bac694;
+  border-radius: 30px;
+  width: 330px;
 }
 
 .popup__id {
-    font-size: .8em;
-    font-family: 'Mitr';
-    width: 40px;
-    height: 40px;
-    border-radius: 43px;
-    background-color: #b6bac694;
-    padding-top: 1em;
-    margin-top: 1.2em;
-    margin-left: 1.5em;
+  font-size: 0.8em;
+  font-family: "Mitr";
+  width: 40px;
+  height: 40px;
+  border-radius: 43px;
+  background-color: #b6bac694;
+  padding-top: 1em;
+  margin-top: 1.2em;
+  margin-left: 1.5em;
 }
 
 .title__container {
-    display: flex;
+  display: flex;
 }
 
 .popup__firsttype {
-    width: 5em;
-    text-align: center;
-    border-radius: 1em;
-    font-size: 1.5em;
-    margin-top: 0.3em;
-    margin-left: -0.6em;
-    font-family: "Gantari";
-    padding: 2px;
-    margin-top: 1em;
+  width: 5em;
+  text-align: center;
+  border-radius: 1em;
+  font-size: 1.5em;
+  margin-top: 0.3em;
+  margin-left: -0.6em;
+  font-family: "Gantari";
+  padding: 2px;
+  margin-top: 1em;
 }
 
 .popup__secondtype {
-    width: 5em;
-    text-align: center;
-    border-radius: 1em;
-    font-size: 1.5em;
-    margin-top: .3em;
-    margin-left: 1em;
-    font-family: 'Gantari';
-    padding: 2px;
-    margin-top: 1em;
+  width: 5em;
+  text-align: center;
+  border-radius: 1em;
+  font-size: 1.5em;
+  margin-top: 0.3em;
+  margin-left: 1em;
+  font-family: "Gantari";
+  padding: 2px;
+  margin-top: 1em;
 }
 
 .popup__description {
-    font-size: 1.2em;
-    margin-top: 2em;
-    font-family: "Gantari";
-    max-width: 350px;
-    background-color: #b6bac694;
-    border-radius: 30px;
-    width: 330px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 25px;
+  font-size: 1.2em;
+  margin-top: 2em;
+  font-family: "Gantari";
+  max-width: 350px;
+  background-color: #b6bac694;
+  border-radius: 30px;
+  width: 330px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
 }
 
 .line__one {
-    @include close(45deg)
+  @include close(45deg);
 }
 
 .line__two {
-    @include close(-45deg)
+  @include close(-45deg);
 }
 
 //////////////////footer///////////////////////////
 .footer {
-    background-color: #b14128;
-    height: 5em;
+  background-color: #b14128;
+  height: 5em;
 }
 
 .cringengineer {
-    @include font-options(1.3em)
+  @include font-options(1.3em);
 }
 
 .copyright {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    @include font-options(1.3em)
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @include font-options(1.3em);
 }
-
-
 
 /////////search////////
 .search {
-    padding-top: 5%;
-    display: flex;
+  padding-top: 5%;
+  display: flex;
 }
 
 .input__search {
-    background-color: #cdd6e1;
-    opacity: .5;
-    border-radius: 1em;
-    margin-left: 3em;
-    border: solid #4b4b4b;
-    font-size: 1.1em;
+  background-color: #cdd6e1;
+  opacity: 0.5;
+  border-radius: 1em;
+  margin-left: 3em;
+  border: solid #4b4b4b;
+  font-size: 1.1em;
 }
 
 .find__button {
-    background-color: #cdd6e1;
-    border: none;
-
+  background-color: #cdd6e1;
+  border: none;
 }
 
 .find {
-    width: 25px;
+  width: 25px;
 }
 
 .list__names {
-    position: absolute;
-    margin-left: 3.5em;
-    margin-top: 2.1em;
-    height: auto;
-    width: 100px;
-    z-index: 3;
-    list-style: none;
-    padding-left: 0;
+  position: absolute;
+  margin-left: 3.5em;
+  margin-top: 2.1em;
+  height: auto;
+  width: 100px;
+  z-index: 3;
+  list-style: none;
+  padding-left: 0;
 }
 
 .list__item {
-    background-color: #dae2ec;
-    opacity: .7;
-    padding-left: 5px;
-    transition: .5s;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 1.1em;
-    width: 215%;
+  background-color: #dae2ec;
+  opacity: 0.7;
+  padding-left: 5px;
+  transition: 0.5s;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 1.1em;
+  width: 215%;
 }
 
 .list__item:hover {
-    background-color: #6e6e6e;
+  background-color: #6e6e6e;
 }
 
 .hiden {
-    display: none;
+  display: none;
 }
-
-
 
 ///////////FILTER/////////
 
 .top__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .filter__button {
-    font-size: 1.3em;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    background-color: #ccc9c9;
-    margin: 0 2em;
-    font-family: 'Mitr';
-    padding: .2em 2em;
-    transition: .5s;
-    font-weight: 300;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ccc9c9;
+  margin: 0 2em;
+  font-family: "Mitr";
+  padding: 0.2em 2em;
+  transition: 0.5s;
+  font-weight: 300;
 }
 .filter__button:hover {
-    background-color: #b8b1b0;
-    transform: scale(115%);
+  background-color: #b8b1b0;
+  transform: scale(115%);
 }
 .opened {
-    background-color: #a29c9b
+  background-color: #a29c9b;
 }
 
 .type__list {
-    display: none;
-    grid-template-columns: repeat(9, 1fr);
-    list-style: none;
-    padding: 0;
-    margin-top: 3%;
+  display: none;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+  padding: 0;
+  margin-top: 3%;
 }
 .type__item {
-    margin: .5em .5em;
-    border: none;
-    border-radius: 1em;
-    font-size: 1.1em;
-    padding: .4em 1.5em;
-    font-family: 'Mitr';
-    cursor: pointer;
-    transition: .3s;
+  margin: 0.5em 0.5em;
+  border: none;
+  border-radius: 1em;
+  font-size: 1.1em;
+  padding: 0.4em 1.5em;
+  font-family: "Mitr";
+  cursor: pointer;
+  transition: 0.3s;
 }
 .type__item:hover {
-    transform: scale(115%);
+  transform: scale(115%);
 }
 
 .choosed__type {
-    border: #4b4b4b 3px solid;
-    padding: 0.1em 0;
+  border: #4b4b4b 3px solid;
+  padding: 0.1em 0;
+}
+
+// adaptive //
+
+@media (max-width: 630px) {
+  .top__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input__search {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .pokemon__card {
+    margin: 1em auto;
+  }
+  .list__names {
+    margin-left: 0;
+  }
+  .type__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

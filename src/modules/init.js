@@ -4,7 +4,7 @@ async function renderPokemons() {
     let pokemons = pokemonList;
     let html = "";
     pokemons.forEach((pokemon) => {
-    let htmlSegment = `<div class="pokemon__card ${pokemon.type.toLowerCase()} ${pokemon.secondType.toLowerCase()}">
+    let htmlSegment = `<div class=" ${pokemon.popupId} pokemon__card ${pokemon.type.toLowerCase()} ${pokemon.secondType.toLowerCase()} ">
                             <div class="img__background">
                             <img class="pokemon__img" src=${pokemon.img}>
                             </div>
@@ -24,6 +24,7 @@ async function renderPokemons() {
 
 let pokemonList = [
     {
+        "popupId": "0",
         "name": "Bulbasaur",
         "id": "№001",
         "type": "Grass",
@@ -32,6 +33,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/001.png"
     },
     {
+        "popupId": "1",
         "name": "Ivysaur",
         "id": "№002",
         "type": "Grass",
@@ -40,6 +42,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/002.png"
     },
     {
+        "popupId": "2",
         "name": "Venusaur",
         "id": "№003",
         "type": "Grass",
@@ -48,6 +51,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/003.png"
     },
     {
+        "popupId": "3",
         "name": "Charmander",
         "id": "№004",
         "type": "Fire",
@@ -56,6 +60,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/004.png"
     },
     {
+        "popupId": "4",
         "name": "Charmeleon",
         "id": "№005",
         "type": "Fire",
@@ -64,6 +69,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/005.png"
     },
     {
+        "popupId": "5",
         "name": "Charizard",
         "id": "№006",
         "type": "Fire",
@@ -72,6 +78,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/006.png"
     },
     {
+        "popupId": "6",
         "name": "Squirtle",
         "id": "№007",
         "type": "Water",
@@ -80,6 +87,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/007.png"
     },
     {
+        "popupId": "7",
         "name": "Wartortle",
         "id": "№008",
         "type": "Water",
@@ -88,6 +96,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/008.png"
     },
     {
+        "popupId": "8",
         "name": "Blastoise",
         "id": "№009",
         "type": "Water",
@@ -96,6 +105,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/009.png"
     },
     {
+        "popupId": "9",
         "name": "Caterpie",
         "id": "№010",
         "type": "Bug",
@@ -104,6 +114,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/010.png"
     },
     {
+        "popupId": "10",
         "name": "Metapod",
         "id": "№011",
         "type": "Bug",
@@ -112,6 +123,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/011.png"
     },
     {
+        "popupId": "11",
         "name": "Butterfree",
         "id": "№012",
         "type": "Bug",
@@ -120,7 +132,8 @@ let pokemonList = [
         "img":"./src/img/pokemons/012.png"
     },
     {
-        "name": "Weedle ",
+        "popupId": "12",
+        "name": "Weedle",
         "id": "№013",
         "type": "Bug",
         "secondType":"Poison",
@@ -128,6 +141,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/013.png"
     },
     {
+        "popupId": "13",
         "name": "Kakuna",
         "id": "№014",
         "type": "Bug",
@@ -136,6 +150,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/014.png"
     },
     {
+        "popupId": "14",
         "name": "Beedrill",
         "id": "№015",
         "type": "Bug",
@@ -144,6 +159,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/015.png"
     },
     {
+        "popupId": "15",
         "name": "Pidgey",
         "id": "№016",
         "type": "Normal",
@@ -152,6 +168,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/016.png"
     },
     {
+        "popupId": "16",
         "name": "Pidgeotto",
         "id": "№017",
         "type": "Normal",
@@ -160,6 +177,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/017.png"
     },
     {
+        "popupId": "17",
         "name": "Pidgeot",
         "id": "№018",
         "type": "Normal",
@@ -168,6 +186,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/018.png"
     },
     {
+        "popupId": "18",
         "name": "Rattata",
         "id": "№019",
         "type": "Normal",
@@ -176,6 +195,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/019.png"
     },
     {
+        "popupId": "19",
         "name": "Raticate",
         "id": "№020",
         "type": "Normal",
@@ -184,6 +204,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/020.png"
     },
     {
+        "popupId": "20",
         "name": "Spearow",
         "id": "№021",
         "type": "Normal",
@@ -192,6 +213,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/021.png"
     },
     {
+        "popupId": "21",
         "name": "Fearow",
         "id": "№022",
         "type": "Normal",
@@ -200,6 +222,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/022.png"
     },
     {
+        "popupId": "22",
         "name": "Ekans",
         "id": "№023",
         "type": "Poison",
@@ -208,6 +231,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/023.png"
     },
     {
+        "popupId": "23",
         "name": "Arbok",
         "id": "№024",
         "type": "Poison",
@@ -216,6 +240,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/024.png"
     },
     {
+        "popupId": "24",
         "name": "Pikachu",
         "id": "№025",
         "type": "Electric",
@@ -224,6 +249,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/025.png"
     },
     {
+        "popupId": "25",
         "name": "Raichu",
         "id": "№026",
         "type": "Electric",
@@ -232,6 +258,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/026.png"
     },
     {
+        "popupId": "26",
         "name": "Sandshrew",
         "id": "№027",
         "type": "Ground",
@@ -240,6 +267,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/027.png"
     },
     {
+        "popupId": "27",
         "name": "Sandslash",
         "id": "№028",
         "type": "Ground",
@@ -248,6 +276,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/028.png"
     },
     {
+        "popupId": "28",
         "name": "Nidoran♀",
         "id": "№029",
         "type": "Poison",
@@ -256,6 +285,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/029.png"
     },
     {
+        "popupId": "29",
         "name": "Nidorina",
         "id": "№030",
         "type": "Poison",
@@ -264,6 +294,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/030.png"
     },
     {
+        "popupId": "30",
         "name": "Nidoqueen",
         "id": "№031",
         "type": "Poison",
@@ -272,6 +303,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/031.png"
     },
     {
+        "popupId": "31",
         "name": "Nidoran♂",
         "id": "№032",
         "type": "Poison",
@@ -280,6 +312,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/032.png"
     },
     {
+        "popupId": "32",
         "name": "Nidorino",
         "id": "№033",
         "type": "Poison",
@@ -288,7 +321,8 @@ let pokemonList = [
         "img":"./src/img/pokemons/033.png"
     },
     {
-        "name": "Nidoking ",
+        "popupId": "33",
+        "name": "Nidoking",
         "id": "№034",
         "type": "Poison",
         "secondType":"Ground",
@@ -296,6 +330,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/034.png"
     },
     {
+        "popupId": "34",
         "name": "Clefairy",
         "id": "№035",
         "type": "Fairy",
@@ -304,6 +339,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/035.png"
     },
     {
+        "popupId": "35",
         "name": "Clefable",
         "id": "№036",
         "type": "Fairy",
@@ -312,6 +348,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/036.png"
     },
     {
+        "popupId": "36",
         "name": "Vulpix",
         "id": "№037",
         "type": "Fire",
@@ -320,6 +357,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/037.png"
     },
     {
+        "popupId": "37",
         "name": "Ninetales",
         "id": "№038",
         "type": "Fire",
@@ -328,6 +366,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/038.png"
     },
     {
+        "popupId": "38",
         "name": "Jigglypuff",
         "id": "№039",
         "type": "Normal",
@@ -336,6 +375,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/039.png"
     },
     {
+        "popupId": "39",
         "name": "Wigglytuff",
         "id": "№040",
         "type": "Normal",
@@ -344,6 +384,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/040.png"
     },
     {
+        "popupId": "40",
         "name": "Zubat",
         "id": "№041",
         "type": "Poison",
@@ -352,6 +393,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/041.png"
     },
     {
+        "popupId": "41",
         "name": "Golbat",
         "id": "№042",
         "type": "Poison",
@@ -360,6 +402,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/042.png"
     },
     {
+        "popupId": "42",
         "name": "Oddish",
         "id": "№043",
         "type": "Grass",
@@ -368,6 +411,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/043.png"
     },
     {
+        "popupId": "43",
         "name": "Gloom",
         "id": "№044",
         "type": "Grass",
@@ -376,6 +420,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/044.png"
     },
     {
+        "popupId": "44",
         "name": "Vileplume",
         "id": "№045",
         "type": "Grass",
@@ -384,6 +429,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/045.png"
     },
     {
+        "popupId": "45",
         "name": "Paras",
         "id": "№046",
         "type": "Bug",
@@ -392,6 +438,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/046.png"
     },
     {
+        "popupId": "46",
         "name": "Parasect",
         "id": "№047",
         "type": "Bug",
@@ -400,6 +447,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/047.png"
     },
     {
+        "popupId": "47",
         "name": "Venonat",
         "id": "№048",
         "type": "Bug",
@@ -408,6 +456,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/048.png"
     },
     {
+        "popupId": "48",
         "name": "Venomoth",
         "id": "№049",
         "type": "Bug",
@@ -416,6 +465,7 @@ let pokemonList = [
         "img":"./src/img/pokemons/049.png"
     },
     {
+        "popupId": "49",
         "name": "Diglett",
         "id": "№050",
         "type": "Ground",
